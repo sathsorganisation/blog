@@ -1,16 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S.A.T.H.S Organisation - Blog</title>
-<meta name="description" content="Welcome to our blog. Stay updated with the latest from S.A.T.H.S!" />
-<meta name="robots" content="index, follow">
-<meta name="revisit-after" content="3 days">
+<title>New Site</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Karla|Yantramanav|Open+Sans|PT+Sans+Narrow:300|Fredoka+One|Lato|Roboto" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <style>
+
+<style>
     
     a,a:link,a:visited,.a:hover,.a:focus,a:active{
         color: inherit;
@@ -56,82 +55,7 @@
     }
     
     .menuOpener:hover {cursor: pointer}
-    
-    p.learn {
-        display: inline-block;
-        background: #39f;
-        color: #fff;
-        padding: 7px 15px;
-        margin: 20px 0 0;
-        transition: all 0.3s ease;
-    }
-    
-    .first {
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        background: #b0dbfb;
-        overflow: hidden;
-    }
-    
-    .first .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        z-index: 99999;
-    }
-    
-    .first h1 {
-        font-family: 'Fredoka One';
-        font-size: 60px;
-        color: #fff;
-        font-weight: 900;
-        margin: 0;
-        padding: 10px 0;
-    }
-    
-    .first p {
-        font-family: 'Karla';
-        font-size: 24px;
-        color: #e6e6e6;
-        margin: 0;
-        padding: 10px 0;
-        font-weight: 900
-    }
-    
-    @media(max-width: 730px){
-        .first p {font-size: 20px}
-        p.learn {font-size: 24px !important}
-    }
-    
-    .bubble {
-        position: absolute;
-        height: 50px;
-        width: 50px;
-        transition: all 0.5s ease;
-        overflow: hidden;
-    }
-    
-    p.learn {
-        background: #fff;
-        color: #39f;
-        display: inline-block;
-        font-size: 28px;
-        padding: 10px 40px;
-        border-radius: 40px;
-        margin-top: 15px;
-        transition: all 0.3s ease;
-    }
-    
-    p.learn:hover {
-        box-shadow: 0 0 0 10px #fff;
-        background: #39f;
-        color: #fff;
-        cursor: pointer;
-    }
-    
+
     .second {
         display: flex;
         justify-content: center;
@@ -164,6 +88,7 @@
         height: 230vh;
         transform: translate(-50%,-50%);
     }
+
     .b2 {
         background: #AFBBF5;
         bottom: 0;
@@ -174,7 +99,7 @@
         height: 160vh;
         transform: translate(-50%,50%);
     }
-        img {width: 100%}
+    
     .b3 {
         top: 0;
         right: 0;
@@ -204,12 +129,15 @@
     .block p:last-child {
         border-bottom: 1px solid #e6e6e6;
     }
+
     .about {
         width: 100%;
         padding: 0px 10px;
         background: #fafafa;
         background-image: url("https://static.wixstatic.com/media/d1c5cd0055c94e3bb1acee9e2fda9f0e.jpg");
         background-size: cover;
+        min-height: 100vh;
+        margin-bottom: 72px;
         background-attachment: fixed;
     }
     
@@ -249,23 +177,8 @@
         font-size: 16px;
     }
     
-    .divide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .part {
-        flex: 1;
-        padding-right: 20px;
-    }
-    
-    .part img {
+    .post img {
         width: 100%;
-    }
-    .textPart {
-        flex: 2;
-        padding-left: 20px;
     }
     
     @media(max-width: 700px){
@@ -292,7 +205,7 @@
         padding: 20px 40px;
         text-align: center;
         background: #333;
- 
+        position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
@@ -399,18 +312,34 @@
         cursor: pointer;
     }
     
-    a.read-more {
-        margin: 0;
-        background: #f05656;
-        color: #fff;
-        display: inline-block;
-        padding: 7px 10px;
-        margin-top: 10px;
+    .return {
+        color: #f05656;
+    }
+    
+    .share {
+        border-top: 3px solid #6e6e6e;
+        padding: 10px 0;
+    }
+    
+    .share i {
+        color: #6e6e6e;
+        padding-right: 5px;
         transition: all 0.3s ease;
     }
     
-    a.read-more:hover {
-        box-shadow: inset 0 0 0 4px #fff;
+    .share .fa-twitter:hover {
+        color: #39f
+    }
+
+    .share .fa-facebook:hover {
+        color: #35f
+    }
+
+    .share .fa-envelope:hover {
+        color: #444
+    }
+    
+    .share i:hover {
         cursor: pointer;
     }
     
@@ -424,6 +353,30 @@
             {{ content }}  
         </div>
     </div>
+      
+    <div class="about">
+        <div class="content">
+            <div class="post">
+                <a href="./"><i class="fa fa-arrow-left return"></i></a>
+                {{ content }}
+                <div class="share">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="who">
+            <p>2018 S.A.T.H.S Ltd</p>
+        </div>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+        </div>
+    </footer>
+    
 
     <footer>
         <div class="who">

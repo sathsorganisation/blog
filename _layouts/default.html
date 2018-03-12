@@ -470,13 +470,31 @@
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    <footer>
+        <div class="who">
+            <p>2018 S.A.T.H.S Ltd</p>
+        </div>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+        </div>
+    </footer>
+    
+    <script>
+        $(".fullMenu i").click(function(){
+            $(this).parent().addClass("outtaSight");
+        }); 
+        
+        $(".learn").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".about").offset().top
+            }, 700);
+        });
+        
+        $(".menuOpener").click(function(){
+            $(".fullMenu").removeClass("outtaSight");
+        }); 
+    </script>
 
     {% include analytics.html %}
   </body>

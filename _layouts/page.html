@@ -9,6 +9,7 @@ image: featured-image.jpg
 
   <div class="entry textPart">
     {{ content }}
+    <p class="date">{{ page.date | date: "%B %e, %Y" }}</p>
   </div>
   <a href="post.html"><p class="read">Read more</p></a>
 </div>
